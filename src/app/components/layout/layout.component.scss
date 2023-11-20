@@ -1,3 +1,5 @@
+$primary-color: #3f51b5;
+
 .sidenav-container {
   height: 100%;
 }
@@ -16,7 +18,7 @@
   top: 0;
   z-index: 1;
   box-shadow: 0px -1px 4px rgba(62, 62, 62, 0.452) inset;
-  height: 150px;
+  height: 200px;
 }
 
 #top-title {
@@ -27,4 +29,11 @@
 
 #top-sidebar-toggle {
   position: absolute;
+}
+
+#top-container {
+  background-image: url('/assets/kyoto-wide1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 10%;
 }
