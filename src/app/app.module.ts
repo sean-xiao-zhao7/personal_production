@@ -11,9 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AlgorithmsComponent } from './pages/algorithms/algorithms.component';
+import { PhotosComponent } from './pages/photos/photos.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, LayoutComponent],
+  declarations: [AppComponent, HomePageComponent, LayoutComponent, AlgorithmsComponent, PhotosComponent, BlogComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
