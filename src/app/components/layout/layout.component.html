@@ -14,6 +14,7 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
+        *ngIf="currentPage !== 'Home'"
       >
         <mat-icon aria-label="Side nav toggle icon"
           >arrow_back_ios_new</mat-icon
@@ -48,7 +49,11 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" id="top-container">
+    <mat-toolbar
+      color="primary"
+      id="top-container"
+      *ngIf="currentPage !== 'Home'"
+    >
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -61,6 +66,8 @@
       </button>
       <span id="top-title">{{ currentPage }}</span>
     </mat-toolbar>
-    <router-outlet></router-outlet>
+    <div id="main-content-container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
