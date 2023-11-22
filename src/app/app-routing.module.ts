@@ -8,6 +8,7 @@ import { DesignsPageComponent } from './pages/designs/designs.component';
 import { AlgorithmsComponent } from './pages/algorithms/algorithms.component';
 import { PhotosComponent } from './pages/photos/photos.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { MusicComponent } from './pages/music/music.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'algorithms', component: AlgorithmsComponent },
   { path: 'photos', component: PhotosComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'music', component: MusicComponent },
 ];
 
 @NgModule({

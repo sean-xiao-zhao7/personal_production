@@ -14,9 +14,10 @@ import { MatListModule } from '@angular/material/list';
 import { AlgorithmsComponent } from './pages/algorithms/algorithms.component';
 import { PhotosComponent } from './pages/photos/photos.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { MusicComponent } from './pages/music/music.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, LayoutComponent, AlgorithmsComponent, PhotosComponent, BlogComponent],
+  declarations: [AppComponent, HomePageComponent, LayoutComponent, AlgorithmsComponent, PhotosComponent, BlogComponent, MusicComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
