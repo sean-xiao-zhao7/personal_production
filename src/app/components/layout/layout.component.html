@@ -8,7 +8,7 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar class="space-between">
-      <span>JPX</span>
+      <span>Cyan Zen Garden</span>
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -23,31 +23,31 @@
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="home" (click)="setCurrentPage('Home')"
-        >Home</a
+        >Home <span>庭</span></a
       >
       <a
         mat-list-item
         routerLink="projects"
         (click)="setCurrentPage('Projects')"
-        >Coding Projects</a
+        >Code <span>工</span></a
       >
       <a mat-list-item routerLink="designs" (click)="setCurrentPage('Designs')"
-        >Designs</a
+        >Art <span>芸</span></a
       >
       <a
         mat-list-item
         routerLink="algorithms"
         (click)="setCurrentPage('Algorithms')"
-        >Algorithms</a
+        >Algorithm <span>法</span></a
       >
       <a mat-list-item routerLink="photos" (click)="setCurrentPage('Photos')"
-        >Photos</a
+        >Photography <span>絵</span></a
       >
       <a mat-list-item routerLink="blog" (click)="setCurrentPage('Blog')"
-        >Blog</a
+        >Explore <span>旅</span></a
       >
       <a mat-list-item routerLink="music" (click)="setCurrentPage('Music')"
-        >Music</a
+        >Music <span>楽</span></a
       >
     </mat-nav-list>
   </mat-sidenav>
