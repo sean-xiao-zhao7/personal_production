@@ -42,6 +42,26 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 50%;
+
+  &.ai {
+    background-image: url('/assets/kyoto-wide1.png');
+  }
+
+  &.algo {
+    background-image: url('/assets/zen-wide1.png');
+  }
+
+  &.photo {
+    background-image: url('/assets/zen-wide1.png');
+  }
+
+  &.explore {
+    background-image: url('/assets/zen-wide1.png');
+  }
+
+  &.music {
+    background-image: url('/assets/zen-wide1.png');
+  }
 }
 
 #layout-title-container {
