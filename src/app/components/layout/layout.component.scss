@@ -1,4 +1,5 @@
-$primary-color: #3f51b5;
+@import '../../sass/fonts.scss';
+@import '../../sass/colors.scss';
 
 .sidenav-container {
   height: 100%;
@@ -11,6 +12,7 @@ $primary-color: #3f51b5;
 
 .sidenav .mat-toolbar {
   background: inherit;
+  justify-content: center;
 }
 
 .mat-toolbar.mat-primary {
@@ -36,4 +38,25 @@ $primary-color: #3f51b5;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 10%;
+}
+
+#layout-title-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 0.5rem;
+  align-items: center;
+
+  h1 {
+    font-family: $secondary-font;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 0rem;
+  }
+
+  #layout-title-kanji {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: $secondary-font-color;
+  }
 }

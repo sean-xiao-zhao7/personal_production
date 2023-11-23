@@ -8,7 +8,10 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar class="space-between">
-      <span>Cyan Zen Garden</span>
+      <div id="layout-title-container">
+        <h1>Cyan</h1>
+        <h1 id="layout-title-kanji">白庭</h1>
+      </div>
       <button
         type="button"
         aria-label="Toggle sidenav"
