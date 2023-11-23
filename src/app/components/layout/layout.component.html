@@ -24,34 +24,34 @@
         >
       </button>
     </mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list id="main-nav">
       <a mat-list-item routerLink="home" (click)="setCurrentPage('Home')"
-        >Home <span>庭</span></a
+        ><span>庭</span><span class="main-nav-item">Home</span></a
       >
       <a
         mat-list-item
         routerLink="projects"
         (click)="setCurrentPage('Projects')"
-        >Code <span>工</span></a
+        ><span>工</span><span class="main-nav-item">Code</span></a
       >
       <a mat-list-item routerLink="designs" (click)="setCurrentPage('Designs')"
-        >Art <span>芸</span></a
+        ><span>芸</span><span class="main-nav-item">A.I. Art</span></a
       >
       <a
         mat-list-item
         routerLink="algorithms"
         (click)="setCurrentPage('Algorithms')"
-        >Algorithm <span>法</span></a
-      >
+        ><span>法</span><span class="main-nav-item">Algorithm</span>
+      </a>
       <a mat-list-item routerLink="photos" (click)="setCurrentPage('Photos')"
-        >Photography <span>絵</span></a
-      >
+        ><span>絵</span><span class="main-nav-item">Photography</span>
+      </a>
       <a mat-list-item routerLink="blog" (click)="setCurrentPage('Blog')"
-        >Explore <span>旅</span></a
-      >
+        ><span>旅</span><span class="main-nav-item">Explore</span>
+      </a>
       <a mat-list-item routerLink="music" (click)="setCurrentPage('Music')"
-        >Music <span>楽</span></a
-      >
+        ><span>楽</span><span class="main-nav-item">Music</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

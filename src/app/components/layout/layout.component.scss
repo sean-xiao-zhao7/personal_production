@@ -60,3 +60,15 @@
     color: $secondary-font-color;
   }
 }
+
+#main-nav {
+  .main-nav-item {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  span:nth-child(1) {
+    color: $secondary-font-color;
+  }
+}
