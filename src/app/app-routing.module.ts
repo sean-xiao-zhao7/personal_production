@@ -11,6 +11,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { MusicComponent } from './pages/music/music.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'prefix' },
   { path: 'home', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
   { path: 'designs', component: DesignsPageComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'photos', component: PhotosComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'music', component: MusicComponent },
+  { path: '**', redirectTo: 'home', pathMatch: 'prefix' },
 ];
 
 @NgModule({
