@@ -25,37 +25,46 @@
       </button>
     </mat-toolbar>
     <mat-nav-list id="main-nav">
-      <a mat-list-item routerLink="home" (click)="setCurrentPage('Home')"
+      <a
+        mat-list-item
+        routerLink="home"
+        (click)="setCurrentPage('Home', '/assets/zen-wide1.png')"
         ><span>庭</span><span class="main-nav-item">Home</span></a
       >
       <a
         mat-list-item
         routerLink="projects"
-        (click)="setCurrentPage('Coding Projects 工')"
+        (click)="setCurrentPage('Coding Projects 工', '/assets/zen-wide1.png')"
         ><span>工</span><span class="main-nav-item">Code</span></a
       >
       <a
         mat-list-item
         routerLink="designs"
-        (click)="setCurrentPage('A.I. Art 芸')"
+        (click)="setCurrentPage('A.I. Art 芸', '/assets/kyoto-wide1.png')"
         ><span>芸</span><span class="main-nav-item">A.I. Art</span></a
       >
       <a
         mat-list-item
         routerLink="algorithms"
-        (click)="setCurrentPage('Algorithms 法')"
+        (click)="setCurrentPage('Algorithms 法', '/assets/zen-wide2.png')"
         ><span>法</span><span class="main-nav-item">Algorithm</span>
       </a>
       <a
         mat-list-item
         routerLink="photos"
-        (click)="setCurrentPage('Photography 絵')"
+        (click)="setCurrentPage('Photography 絵', '/assets/castle1.png')"
         ><span>絵</span><span class="main-nav-item">Photography</span>
       </a>
-      <a mat-list-item routerLink="blog" (click)="setCurrentPage('Explore 旅')"
+      <a
+        mat-list-item
+        routerLink="blog"
+        (click)="setCurrentPage('Explore 旅', '/assets/castle2.png')"
         ><span>旅</span><span class="main-nav-item">Explore</span>
       </a>
-      <a mat-list-item routerLink="music" (click)="setCurrentPage('Music 楽')"
+      <a
+        mat-list-item
+        routerLink="music"
+        (click)="setCurrentPage('Music 楽', '/assets/zen1.png')"
         ><span>楽</span><span class="main-nav-item">Music</span>
       </a>
     </mat-nav-list>

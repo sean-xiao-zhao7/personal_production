@@ -20,7 +20,11 @@ export class LayoutComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  setCurrentPage(newPage: string) {
+  setCurrentPage(newPage: string, backgroundImage: string) {
     this.currentPage = newPage;
+    const header = <HTMLElement>document.querySelector('#top-container');
+    if (header) {
+      header.style.backgroundImage = `url(${backgroundImage})`;
+    }
   }
 }
