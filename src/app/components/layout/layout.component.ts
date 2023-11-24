@@ -20,11 +20,21 @@ export class LayoutComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
-  setCurrentPage(newPage: string, backgroundImage: string) {
+  setCurrentPage(
+    newPage: string,
+    backgroundImage: string,
+    backgroundPosition: string,
+    fontColor?: string
+  ) {
     this.currentPage = newPage;
     const header = <HTMLElement>document.querySelector('#top-container');
     if (header) {
       header.style.backgroundImage = `url(${backgroundImage})`;
+      header.style.backgroundPosition = backgroundPosition;
+      if (fontColor) {
+        const title = <HTMLElement>document.querySelector('#top-title');
+        title.style.color = fontColor;
+      }
     }
   }
 }

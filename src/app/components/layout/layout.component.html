@@ -28,43 +28,77 @@
       <a
         mat-list-item
         routerLink="home"
-        (click)="setCurrentPage('Home', '/assets/zen-wide1.png')"
+        (click)="
+          setCurrentPage('Home', '/assets/zen-wide1.png', '0 50%', 'black')
+        "
         ><span>庭</span><span class="main-nav-item">Home</span></a
       >
       <a
         mat-list-item
         routerLink="projects"
-        (click)="setCurrentPage('Coding Projects 工', '/assets/zen-wide1.png')"
+        (click)="
+          setCurrentPage(
+            'Coding Projects 工',
+            '/assets/zen-wide1.png',
+            '0 50%',
+            'black'
+          )
+        "
         ><span>工</span><span class="main-nav-item">Code</span></a
       >
       <a
         mat-list-item
         routerLink="designs"
-        (click)="setCurrentPage('A.I. Art 芸', '/assets/kyoto-wide1.png')"
+        (click)="
+          setCurrentPage(
+            'A.I. Art 芸',
+            '/assets/kyoto-wide1.png',
+            '0 23%',
+            'white'
+          )
+        "
         ><span>芸</span><span class="main-nav-item">A.I. Art</span></a
       >
       <a
         mat-list-item
         routerLink="algorithms"
-        (click)="setCurrentPage('Algorithms 法', '/assets/zen-wide2.png')"
+        (click)="
+          setCurrentPage(
+            'Algorithms 法',
+            '/assets/zen-wide2.png',
+            '0 50%',
+            'black'
+          )
+        "
         ><span>法</span><span class="main-nav-item">Algorithm</span>
       </a>
       <a
         mat-list-item
         routerLink="photos"
-        (click)="setCurrentPage('Photography 絵', '/assets/castle1.png')"
+        (click)="
+          setCurrentPage(
+            'Photography 絵',
+            '/assets/castle1.png',
+            '0 30%',
+            'white'
+          )
+        "
         ><span>絵</span><span class="main-nav-item">Photography</span>
       </a>
       <a
         mat-list-item
         routerLink="blog"
-        (click)="setCurrentPage('Explore 旅', '/assets/castle2.png')"
+        (click)="
+          setCurrentPage('Explore 旅', '/assets/castle2.png', '0 15%', 'white')
+        "
         ><span>旅</span><span class="main-nav-item">Explore</span>
       </a>
       <a
         mat-list-item
         routerLink="music"
-        (click)="setCurrentPage('Music 楽', '/assets/zen1.png')"
+        (click)="
+          setCurrentPage('Music 楽', '/assets/girl-wide1.png', '0 5%', 'white')
+        "
         ><span>楽</span><span class="main-nav-item">Music</span>
       </a>
     </mat-nav-list>
