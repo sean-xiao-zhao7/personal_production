@@ -4,6 +4,7 @@
   .two-cols-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 1rem;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
   }
 }
