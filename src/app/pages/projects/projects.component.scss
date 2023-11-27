@@ -1,0 +1,9 @@
+#main-code-conatiner {
+  padding: 2rem;
+
+  .two-cols-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 1rem;
+  }
+}
