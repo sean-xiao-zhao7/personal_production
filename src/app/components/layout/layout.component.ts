@@ -37,4 +37,21 @@ export class LayoutComponent {
       }
     }
   }
+
+  onScroll(event: Event) {
+    if (event.target) {
+      const currentTop = (event.target as HTMLElement).scrollTop;
+      if (currentTop > 100) {
+        const header = <HTMLElement>document.querySelector('#top-container');
+        if (header) {
+          header.style.height = '100px';
+        }
+      } else if (currentTop <= 100) {
+        const header = <HTMLElement>document.querySelector('#top-container');
+        if (header) {
+          header.style.height = '250px';
+        }
+      }
+    }
+  }
 }

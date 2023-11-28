@@ -103,7 +103,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content (scroll)="onScroll($event)">
     <mat-toolbar
       color="primary"
       id="top-container"
