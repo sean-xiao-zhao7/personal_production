@@ -3,13 +3,32 @@
 
   .two-cols-container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
+
+    .two-cols-container-child {
+      height: 500px;
+
+      mat-card {
+        height: 100%;
+      }
+    }
   }
 
   img {
     width: 100%;
     border-radius: 10px;
   }
+
+  .image-columns {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+  }
+
 }
