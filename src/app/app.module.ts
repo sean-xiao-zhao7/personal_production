@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LayoutModule } from '@angular/cdk/layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlgorithmsComponent } from './pages/algorithms/algorithms.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { DesignsPageComponent } from './pages/designs/designs.component';
 import { HomePageComponent } from './pages/home/home.component';
 import { LayoutComponent } from './components/layout/layout.component';
-import { AlgorithmsComponent } from './pages/algorithms/algorithms.component';
-import { PhotosComponent } from './pages/photos/photos.component';
-import { BlogComponent } from './pages/blog/blog.component';
 import { MusicComponent } from './pages/music/music.component';
+import { PhotosComponent } from './pages/photos/photos.component';
 import { ProjectsPageComponent } from './pages/projects/projects.component';
 
 @NgModule({
@@ -29,6 +31,7 @@ import { ProjectsPageComponent } from './pages/projects/projects.component';
     BlogComponent,
     MusicComponent,
     ProjectsPageComponent,
+    DesignsPageComponent,
   ],
   imports: [
     AppRoutingModule,

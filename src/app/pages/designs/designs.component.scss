@@ -1,0 +1,22 @@
+#main-designs-conatiner {
+  padding: 1rem;
+
+  .three-cols-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+    .two-cols-container-child {
+
+      mat-card {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
