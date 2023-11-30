@@ -18,3 +18,12 @@ body {
 .mat-toolbar.mat-primary {
   background-color: white;
 }
+
+.icon-p-center {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 0.5rem;
+  align-items: center;
+  justify-content: start;
+  padding-top: 1rem;
+}
