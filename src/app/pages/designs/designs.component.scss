@@ -23,6 +23,10 @@
         object-fit: cover;
       }
 
+      img:hover+.icon-p-center {
+        opacity: 100;
+      }
+
       .icon-p-center {
         background-color: #00000069;
         color: white;
@@ -30,6 +34,8 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+        opacity: 0;
+        transition: opacity 0.2s;
       }
 
       &.three-cols-span {
