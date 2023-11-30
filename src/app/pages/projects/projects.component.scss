@@ -25,7 +25,9 @@
         grid-column-gap: 0.5rem;
 
         img {
-          // width: 30%;
+          max-height: 300px;
+          object-fit: cover;
+          border: solid 1px #ebebeb;
         }
       }
     }
