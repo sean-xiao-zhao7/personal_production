@@ -31,3 +31,8 @@ body {
 .card-content-no-padding {
   padding: 0 !important;
 }
+
+.three-cols-span {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

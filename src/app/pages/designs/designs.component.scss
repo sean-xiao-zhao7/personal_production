@@ -24,10 +24,12 @@
       }
 
       .icon-p-center {
-        background-color: black;
+        background-color: #00000069;
         color: white;
         padding: 1rem;
         position: absolute;
+        bottom: 0;
+        width: 100%;
       }
 
       &.three-cols-span {
