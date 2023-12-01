@@ -1,5 +1,12 @@
 #main-music-conatiner {
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.77);
+  display: grid;
+  grid-row-gap: 1rem;
+  background-color: rgba(214, 214, 214, 0.301);
 
+  .single-track-container {}
+
+  iframe {
+    border-radius: 20px;
+  }
 }

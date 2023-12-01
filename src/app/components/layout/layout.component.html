@@ -61,6 +61,14 @@
       >
       <a
         mat-list-item
+        routerLink="music"
+        (click)="
+          setCurrentPage('Music 楽', '/assets/girl-wide1.png', '0 5%', 'white')
+        "
+        ><span>楽</span><span class="main-nav-item">Music</span>
+      </a>
+      <a
+        mat-list-item
         routerLink="photos"
         (click)="
           setCurrentPage(
@@ -93,14 +101,6 @@
         "
         ><span>旅</span><span class="main-nav-item">Explore</span>
       </a> -->
-      <a
-        mat-list-item
-        routerLink="music"
-        (click)="
-          setCurrentPage('Music 楽', '/assets/girl-wide1.png', '0 5%', 'white')
-        "
-        ><span>楽</span><span class="main-nav-item">Music</span>
-      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content (scroll)="onScroll($event)">
