@@ -33,9 +33,11 @@
         padding: 1rem;
         position: absolute;
         bottom: 0;
-        width: 100%;
         opacity: 0;
         transition: opacity 0.2s;
+        font-size: 14px;
+        word-wrap: normal;
+        display: block;
       }
 
       &.three-cols-span {
