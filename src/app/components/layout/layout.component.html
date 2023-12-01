@@ -107,8 +107,9 @@
     <mat-toolbar
       color="primary"
       id="top-container"
-      *ngIf="currentPage !== 'Home'"
+      [ngStyle]="{ display: currentPage === 'Home' ? 'none' : 'flex' }"
     >
+      <!-- *ngIf="currentPage !== 'Home'" -->
       <button
         type="button"
         aria-label="Toggle sidenav"

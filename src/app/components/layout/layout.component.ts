@@ -41,6 +41,7 @@ export class LayoutComponent implements OnInit {
   ) {
     this.currentPage = newPage;
     const header = <HTMLElement>document.querySelector('#top-container');
+    console.log(header);
     if (header) {
       header.style.backgroundImage = `url(${backgroundImage})`;
       header.style.backgroundPosition = backgroundPosition;
