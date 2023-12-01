@@ -38,6 +38,7 @@
         font-size: 14px;
         word-wrap: normal;
         display: block;
+        width: -webkit-fill-available;
       }
 
       &.three-cols-span {
