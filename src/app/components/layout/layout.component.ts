@@ -57,20 +57,23 @@ export class LayoutComponent implements OnInit {
       const currentTop = (event.target as HTMLElement).scrollTop;
       if (currentTop > 90) {
         const header = <HTMLElement>document.querySelector('#top-container');
+        const topTitle = <HTMLElement>document.querySelector('#top-title');
         const contentContainer = <HTMLElement>(
           document.querySelector('#main-content-container')
         );
-        header.style.height = '100px';
-        contentContainer.style.marginTop = '260px';
+        header.style.height = '50px';
+        topTitle.style.fontSize = '1.5rem';
+        contentContainer.style.marginTop = '160px';
         this.doShrink = false;
       } else if (currentTop < 100) {
         const header = <HTMLElement>document.querySelector('#top-container');
-
+        const topTitle = <HTMLElement>document.querySelector('#top-title');
         const contentContainer = <HTMLElement>(
           document.querySelector('#main-content-container')
         );
-        header.style.height = '250px';
-        contentContainer.style.marginTop = '250px';
+        header.style.height = '150px';
+        topTitle.style.fontSize = '2rem';
+        contentContainer.style.marginTop = '150px';
       }
     }
   }
