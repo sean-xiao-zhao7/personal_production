@@ -41,13 +41,21 @@ export class LayoutComponent implements OnInit {
   ) {
     this.currentPage = newPage;
     const header = <HTMLElement>document.querySelector('#top-container');
-    console.log(header);
     if (header) {
       header.style.backgroundImage = `url(${backgroundImage})`;
       header.style.backgroundPosition = backgroundPosition;
       if (fontColor) {
         const title = <HTMLElement>document.querySelector('#top-title');
         title.style.color = fontColor;
+      }
+      const mainContentContainer = <HTMLElement>(
+        document.querySelector('#main-content-container')
+      );
+      if (newPage === 'A.I. Art 芸') {
+        mainContentContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.77)';
+      } else {
+        mainContentContainer.style.backgroundColor =
+          'rgba(214, 214, 214, 0.301)';
       }
     }
   }
@@ -63,7 +71,7 @@ export class LayoutComponent implements OnInit {
         );
         header.style.height = '50px';
         topTitle.style.fontSize = '1.5rem';
-        contentContainer.style.marginTop = '160px';
+        contentContainer.style.paddingTop = '160px';
         this.doShrink = false;
       } else if (currentTop < 100) {
         const header = <HTMLElement>document.querySelector('#top-container');
@@ -73,7 +81,7 @@ export class LayoutComponent implements OnInit {
         );
         header.style.height = '150px';
         topTitle.style.fontSize = '2rem';
-        contentContainer.style.marginTop = '150px';
+        contentContainer.style.paddingTop = '150px';
       }
     }
   }
