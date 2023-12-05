@@ -1,5 +1,8 @@
-#main-code-conatiner {
+@import '../../sass/colors.scss';
+
+#main-code-container {
   padding: 1rem;
+  background-color: $background-grey;
 
   .two-cols-container {
     display: grid;
